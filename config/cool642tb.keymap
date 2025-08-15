@@ -72,7 +72,7 @@
 &kp Q             &kp W             &kp E               &kp R      &kp T                                                              &kp Y        &kp U  &kp I             &kp O          &mt ESC EQUAL
 &kp A             &kp S             &kp D               &kp F      &kp G      &to 0                     &kp DELETE                    &kp H        &kp J  &kp K             &kp L          &mt BACKSLASH P
 &kp Z             &kp X             &kp C               &kp V      &kp B      &mt LEFT_BRACKET MINUS    &mt RIGHT_BRACKET UNDERSCORE  &kp N        &kp M  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp PERIOD
-&mt LEFT_WIN TAB  &kp LEFT_CONTROL  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA                   &lt 2 ENTER                                          &mt CLCK SLASH
+&kp LEFT_CONTROL  &mt LEFT_WIN TAB  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA                   &lt 2 ENTER                                          &mt CLCK SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -116,7 +116,7 @@
 &kp Q             &kp W             &kp E               &kp R      &kp T                                                              &kp Y        &kp U  &kp I    &kp O          &mt ESC EQUAL
 &kp A             &kp S             &kp D               &kp F      &kp G      &to 0                     &kp DELETE                    &kp H        &kp J  &kp K    &kp L          &mt BACKSLASH P
 &kp Z             &kp X             &kp C               &kp V      &kp B      &mt LEFT_BRACKET MINUS    &mt RIGHT_BRACKET UNDERSCORE  &kp N        &kp M  &kp SQT  &kp SEMICOLON  &kp PERIOD
-&mt LEFT_WIN TAB  &kp LEFT_CONTROL  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA                   &lt 2 ENTER                                 &mt CLCK SLASH
+&kp LEFT_CONTROL  &mt LEFT_WIN TAB  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA                   &lt 2 ENTER                                 &mt CLCK SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
