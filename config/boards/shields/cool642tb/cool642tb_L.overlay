@@ -1,18 +1,5 @@
 #include "cool642tb.dtsi"
 
-/ {
-    chosen {
-        zmk,battery = &non_lipo_battery;
-    };
-
-    /* ノード名はハイフン推奨（DTの慣習）。ラベルは参照用 */
-    non_lipo_battery: non-lipo-battery {
-        compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 2>;           // 使うADCチャンネル番号（例）
-        power-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>; // 分圧電源の制御ピン（任意）
-    };
-};
-
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
