@@ -15,10 +15,20 @@
 };
 
 / {
+    chosen {
+        zmk,battery = &non_lipo_battery;
+    };
+
+    /* ラベル: non_lipo_battery, ノード名は慣習的にハイフン */
+    non_lipo_battery: non-lipo-battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 2>;                 // 使用するADCチャンネル（要環境確認）
+        power-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>; // 分圧器の電源制御（任意）
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
     };
 };
 
