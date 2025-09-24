@@ -14,13 +14,3 @@
 &left_encoder {
     status = "okay";
 };
-
-/ {
-    chosen {
-        zmk,battery = &non_lipo_battery;
-    };
-    non_lipo_battery: non_lipo_battery {
-        compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 0>;
-    };
-};
