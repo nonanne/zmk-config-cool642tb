@@ -6,7 +6,7 @@
         zmk,physical-layout = &cool642tb_physical_layout;
         zmk,battery = &non_lipo_battery;
     };
-    
+
     cool642tb_physical_layout: cool642tb_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
@@ -102,7 +102,10 @@
     right_encoder: encoder_right {
         status = "disabled";
     };
-
+    vbatt: vbatt {
+        // Disable default battery monitoring
+        status = "disabled";
+    };
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
