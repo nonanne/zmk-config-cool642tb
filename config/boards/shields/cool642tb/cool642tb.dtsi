@@ -4,7 +4,6 @@
 / {
     chosen {
         zmk,physical-layout = &cool642tb_physical_layout;
-        zmk,battery = &non_lipo_battery;
     };
     
     cool642tb_physical_layout: cool642tb_physical_layout {
@@ -107,9 +106,5 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
-    };
-    non_lipo_battery: non_lipo_battery {
-        compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 0>;  // 使用するADCチャンネル
     };
 };
