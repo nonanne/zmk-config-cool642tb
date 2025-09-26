@@ -102,10 +102,6 @@
     right_encoder: encoder_right {
         status = "disabled";
     };
-    vbatt: vbatt {
-        // Disable default battery monitoring
-        status = "disabled";
-    };
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
