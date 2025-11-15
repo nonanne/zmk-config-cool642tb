@@ -93,7 +93,7 @@
             bindings = <
 &kp F1       &kp F2   &kp F3         &kp F4          &kp F5                                               &kp F6          &kp F7          &kp UP_ARROW    &kp F9           &kp F10
 &kp AT_SIGN  &kp SQT  &kp SEMICOLON  &kp SLASH       &kp BACKSLASH  &to 0       &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT        &kp ENTER
-&trans       &trans   &trans         &trans          &trans         &trans      &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
+&kp A        &kp S    &kp D          &kp F           &kp G          &kp B       &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
 &kp RSHIFT   &kp TAB  &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
             >;
 
