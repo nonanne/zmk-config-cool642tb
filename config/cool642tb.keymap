@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp E               &kp R      &kp T                                                              &kp Y        &kp U  &kp I             &kp O          &mt ESC EQUAL
-&kp A             &kp S             &kp D               &kp F      &kp G      &to 0                     &kp DELETE                    &kp H        &kp J  &kp K             &kp L          &kp P
-&kp Z             &kp X             &kp C               &kp V      &kp B      &mt LEFT_BRACKET MINUS    &mt RIGHT_BRACKET UNDERSCORE  &kp N        &kp M  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp PERIOD
-&kp LEFT_CONTROL  &mt LEFT_WIN TAB  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA                   &lt 2 ENTER                                          &mt CLCK SLASH
+&kp Q             &kp W             &kp E               &kp R      &kp T                                                          &kp Y        &kp U  &kp I             &kp O          &mt ESC EQUAL
+&kp A             &kp S             &kp D               &kp F      &kp G      &to 0                     &kp DELETE                &kp H        &kp J  &kp K             &kp L          &kp P
+&kp Z             &kp X             &kp C               &kp V      &kp B      &mt SLASH MINUS           &mt BACKSLASH UNDERSCORE  &kp N        &kp M  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp PERIOD
+&kp LEFT_CONTROL  &mt LEFT_WIN TAB  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA               &lt 2 ENTER                                          &mt CLCK SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -80,10 +80,10 @@
 
         FUNCTION {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)      &kp LS(N5)                                               &kp PLUS        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)            &kp LS(N0)             &to 0           &kp INT_MUHENKAN  &kp MINUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER
-&kp CARET         &kp SLASH         &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp TILDE       &kp N7        &kp N8        &kp N9        &kp PERIOD
-&bt BT_PRV        &kp SQT           &kp SEMICOLON     &kp COMMA             &kp PERIOD             &kp SLASH       &kp MINUS         &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)      &kp LS(NUMBER_4)       &kp LS(N5)                                             &kp PLUS        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(N8)            &kp LS(N9)             &kp LS(N0)        &to 0              &kp INT_MUHENKAN  &kp MINUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER
+&kp LEFT_BRACE    &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp TILDE       &kp N7        &kp N8        &kp N9        &kp PERIOD
+&bt BT_PRV        &kp SQT           &kp SEMICOLON         &kp COMMA              &kp PERIOD        &kp SLASH          &kp MINUS         &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -91,10 +91,10 @@
 
         NUM {
             bindings = <
-&kp F1       &kp F2   &kp F3         &kp F4          &kp F5                                               &kp F6          &kp F7          &kp UP_ARROW    &kp F9           &kp F10
-&kp AT_SIGN  &kp SQT  &kp SEMICOLON  &kp SLASH       &kp BACKSLASH  &to 0       &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT        &kp ENTER
-&kp A        &kp S    &kp D          &kp F           &kp G          &kp B       &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
-&kp RSHIFT   &kp TAB  &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
+&kp F1       &kp F2   &kp F3         &kp F4     &kp F5                                           &kp F6          &kp F7          &kp UP_ARROW    &kp F9           &kp F10
+&kp AT_SIGN  &kp SQT  &kp SEMICOLON  &kp SLASH  &kp BACKSLASH  &to 0   &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT        &kp ENTER
+&kp A        &kp S    &kp D          &kp F      &kp G          &kp B   &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
+&kp RSHIFT   &kp TAB  &trans         &trans     &trans         &trans  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
