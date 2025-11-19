@@ -83,7 +83,7 @@
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)      &kp LS(NUMBER_4)       &kp LS(N5)                                             &kp PLUS        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
 &kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(N8)            &kp LS(N9)             &kp LS(N0)        &to 0              &kp INT_MUHENKAN  &kp MINUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER
 &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp TILDE       &kp N7        &kp N8        &kp N9        &kp PERIOD
-&bt BT_PRV        &kp SQT           &kp SEMICOLON         &kp COMMA              &kp PERIOD        &kp SLASH          &kp MINUS         &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
+&trans            &kp SQT           &kp SEMICOLON         &kp COMMA              &kp PERIOD        &kp SLASH          &kp MINUS         &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
