@@ -3,9 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-/* Change scroll amount (may not take effect depending on ZMK config) */
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
-
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
@@ -66,7 +63,7 @@
             tapping-term-ms = <200>;
         };
 
-        /* New scroll behavior for encoder (sensor rotate -> mouse wheel up/down) */
+        /* Added: Encoder rotation -> Mouse wheel scroll up/down */
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -86,8 +83,10 @@
 &kp LEFT_CONTROL  &mt LEFT_WIN TAB  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA               &lt 2 ENTER                                          &mt CLCK SLASH
             >;
 
-            /* Apply: encoder rotation scrolls up/down on default layer */
-            sensor-bindings = <&scroll_up_down>;
+            /* Changed: default layer encoder -> wheel scroll
+             * If you have multiple sensors, repeating helps ensure the encoder is mapped.
+             */
+            sensor-bindings = <&scroll_up_down &scroll_up_down>;
         };
 
         FUNCTION {
