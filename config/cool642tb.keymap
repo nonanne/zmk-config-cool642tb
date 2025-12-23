@@ -63,16 +63,12 @@
             tapping-term-ms = <200>;
         };
 
-        /* Added: Tap = normal key, Hold = momentary layer */
-        st: scroll_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Scroll / Tap";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            hold-while-undecided;
+        /* Added: Encoder rotation -> Mouse wheel scroll up/down */
+        scroll_up_down: scroll_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>;
         };
     };
 
@@ -83,11 +79,12 @@
             bindings = <
 &kp Q             &kp W             &kp E               &kp R      &kp T                                                          &kp Y        &kp U  &kp I             &kp O          &mt ESC EQUAL
 &kp A             &kp S             &kp D               &kp F      &kp G      &to 0                     &kp DELETE                &kp H        &kp J  &kp K             &kp L          &kp P
-&kp Z             &kp X             &kp C               &kp V      &kp B      &mt SLASH MINUS           &mt BACKSLASH UNDERSCORE  &kp N        &st SCROLL M      &kp SINGLE_QUOTE  &kp SEMICOLON  &kp PERIOD
+&kp Z             &kp X             &kp C               &kp V      &kp B      &mt SLASH MINUS           &mt BACKSLASH UNDERSCORE  &kp N        &kp M  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp PERIOD
 &kp LEFT_CONTROL  &mt LEFT_WIN TAB  &mt LEFT_ALT SPACE  &mkp LCLK  &mkp RCLK  &mt LEFT_SHIFT BACKSPACE  &lt 1 COMMA               &lt 2 ENTER                                          &mt CLCK SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            /* Changed: default layer encoder -> wheel scroll */
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
