@@ -107,10 +107,10 @@
 
         NUM {
             bindings = <
-&kp F1       &kp F2   &kp F3         &kp F4     &kp F5                                           &kp F6            &kp F7          &kp UP_ARROW    &kp F9           &kp F10
-&kp AT_SIGN  &kp SQT  &kp SEMICOLON  &kp SLASH  &kp BACKSLASH  &to 0   &kp INT_KATAKANAHIRAGANA  &kp LEFT          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT        &kp ENTER
-&kp A        &kp S    &kp D          &kp F      &kp G          &kp B   &msc MOVE_Y(20)           &msc MOVE_Y(-20)  &msc SCRL_UP    &msc SCRL_DOWN  &kp RIGHT_BRACE  &kp SLASH
-&kp RSHIFT   &kp TAB  &trans         &trans     &trans         &trans  &none                     &bt BT_CLR_ALL                                                     &kp LEFT_SHIFT
+&kp F1       &kp F2   &kp F3         &kp F4     &kp F5                                           &kp F6           &kp F7           &kp UP_ARROW      &kp F9           &kp F10
+&kp AT_SIGN  &kp SQT  &kp SEMICOLON  &kp SLASH  &kp BACKSLASH  &to 0   &kp INT_KATAKANAHIRAGANA  &kp LEFT         &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT        &kp ENTER
+&kp A        &kp S    &kp D          &kp F      &kp G          &kp B   &msc MOVE_X(-20)          &msc MOVE_X(20)  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &kp RIGHT_BRACE  &kp SLASH
+&kp RSHIFT   &kp TAB  &trans         &trans     &trans         &trans  &none                     &bt BT_CLR_ALL                                                       &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
